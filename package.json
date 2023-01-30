@@ -3,19 +3,32 @@
   "version": "1.0.0",
   "description": "Parse aws event bridge cron expression",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
-  "keywords": ["EventBridge", "aws", "cron", "expression"],
+  "jest": {
+    "verbose": true
+  },
+  "keywords": [
+    "EventBridge",
+    "aws",
+    "cron",
+    "expression"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^2.29.3"
   },
+  "standard": {
+    "ignore": [
+      "/test/*.test.js"
+    ]
+  },
   "devDependencies": {
+    "jest": "^29.4.1",
     "standard": "11.0.1"
   }
 }
