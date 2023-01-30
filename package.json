@@ -1,6 +1,6 @@
 {
   "name": "aws-cron-expression-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parse aws event bridge cron expression",
   "main": "src/index.js",
   "scripts": {
