@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "postinstall": "npm i"
   },
   "jest": {
     "verbose": true
