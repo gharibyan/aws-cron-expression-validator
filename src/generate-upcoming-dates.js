@@ -21,7 +21,7 @@ function generateUpcomingDates (expression, numberOfDats = 10) {
       if (hour === '*' || isSameHour(next, now)) {
         if (dayOfMonth === '*' || isSameDay(next, now)) {
           if (month === '*' || isSameMonth(next, now)) {
-            if (dayOfWeek === '*' || isSameWeekday(next, now)) {
+            if (dayOfWeek === '*' || isSameDay(next, now)) {
               dates.push(format(next, 'yyyy-MM-dd HH:mm:ss'))
             }
           }
