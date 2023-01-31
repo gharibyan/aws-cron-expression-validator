@@ -1,4 +1,4 @@
-const { awsCronExpressionValidator } = require('../src')
+const { awsCronExpressionValidator, generateUpcomingDates } = require('../src')
 
 test('validate aws expression should be valid', () => {
   const expr = '0 12 ? * MON-FRI *'
@@ -24,4 +24,10 @@ test('validate aws expression should be invalid', () => {
   } catch (error) {
     expect(error.message).toBe(`Invalid year value '1969'.`)
   }
+})
+
+test('generateUpcomingDates', () => {
+  const expr = '0 12 ? * MON-FRI *'
+  const dates = generateUpcomingDates(expr)
+  expect(dates.length).toBe(10)
 })
