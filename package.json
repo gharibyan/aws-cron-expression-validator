@@ -8,6 +8,9 @@
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "jest": {
     "verbose": true
   },
